@@ -6,9 +6,7 @@ To write a python program for Implementation of Pseudorandom Number Generation U
 2. Generate a Random Integer
 3. Generate a Random Floating-point Number
 4. Choose a Random Element from a Sequence
-5. Shuffle a List Randomly
-6. Select a Random Sample
-7. Generate a Random Number Using Gaussian Distribution
+5. Generate a Random Number Using Gaussian Distribution
 ## PROGRAM:
 ```
 import random
