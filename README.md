@@ -9,25 +9,32 @@ To write a python program for Implementation of Pseudorandom Number Generation U
 5. Generate a Random Number Using Gaussian Distribution
 ## PROGRAM:
 ```
-import random
-random_int = random.randint(1, 100)
-print(f"Random Integer: {random_int}")
-random_float = random.random()
-print(f"Random Float (0 to 1): {random_float}")
-random_uniform = random.uniform(1.5, 10.5)
-print(f"Random Float (1.5 to 10.5): {random_uniform}")
-choices = ['apple', 'banana', 'cherry', 'date']
-random_choice = random.choice(choices)
-print(f"Random Choice: {random_choice}")
-random.shuffle(choices)
-print(f"Shuffled List: {choices}")
-random_sample = random.sample(choices, 3)
-print(f"Random Sample: {random_sample}")
-random_gauss = random.gauss(0, 1)  # mean = 0, standard deviation = 1
-print(f"Random Gaussian Value: {random_gauss}")
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() 
+{
+    int count, min, max;
+    printf("Enter the number of random numbers to generate: ");
+    scanf("%d", &count);
+    printf("Enter the minimum value: ");
+    
+    scanf("%d", &min);
+    printf("Enter the maximum value: ");
+    scanf("%d", &max);
+    srand(time(NULL));
+    printf("Pseudorandom numbers:\n");   
+    for (int i = 0; i < count; i++) 
+    {
+        int random_number = (rand() % (max - min + 1)) + min;
+        printf("%d\n", random_number);
+    }
+    return 0;
+}
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/0bf3f311-830e-4e2e-bf89-068a5811e7b2)
+![image](https://github.com/user-attachments/assets/a92df70c-ebc9-47f1-a3d0-a1a1f1d43c01)
 
 ## RESULT:
 Thus the program to execute a python program for Implementation of Pseudorandom Number Generation Using Standard library is successful
